@@ -26,6 +26,7 @@ function Home({allPostsData}) {
   )
 }
 export async function getStaticProps() {
+  // getStaticProps 静态端渲染，可以被cdn缓存
   const allPostsData = getSortedPostsData()
   return {
     props: {
